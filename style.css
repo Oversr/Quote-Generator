@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./images/stylish-library.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.content-container {
+    width: 550px;
+    height: 450px;
+}
+
+header {
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #262626;
+    padding: .35rem;
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3rem 4rem;
+    box-shadow: 0 0 10px;
+}
+
+section .container p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.person {
+    display: block;
+    font-size: 1.6rem;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.new-quote-btn {
+    background-color: #262626;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    margin-top: 1.1rem;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new-quote-btn:active {
+    background-color: lightblue;
+}
+
+@media (max-width: 768px) {
+
+    .content-container {
+        width: 500px;
+        height: auto;
+    }
+
+    header {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 2.5rem 3rem;
+    }
+
+    section .container p {
+        font-size: 1.3rem;
+    }
+
+    .person {
+        font-size: 1.4rem;
+    }
+
+    .new-quote-btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    section {
+        padding: 1rem 3rem;
+        height: 80%;
+    }
+}
